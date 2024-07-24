@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Auth Connect Project</title>
+</head>
+<body class="sign-in-page">
+    <!-- Contenido principal de la página -->
+    <main class="sign-in" id="main-content" role="main">
+        <!-- Contenedor del formulario -->
+        <div class="sign-in__container">
+             <!-- Contenedor envolvente -->
+             <div class="sign-in__wrapper">
+                <!-- Artículo que contiene el formulario de inicio de sesión -->
+                <article class="sign-in__form">
+                    <!-- Formulario de inicio de sesión -->
+                    <form action="#">
+                        <h1>Login</h1>
+                        <!-- Grupo de campos de entrada -->
+                         <div class="sign-in__input-box">
+                            <input type="text", placeholder="Username" required>
+                            <i class='bx bxs-user'></i>
+                         </div>
+
+                         <div class="sign-in__input-box">
+                            <input type="password", placeholder="Password" required>
+                            <i class='bx bxs-lock-alt' ></i>
+                         </div>
+
+                         <div class="sign-in__remember-forgot">
+                            <label><input type="checkbox"> Remenber me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+
+                        <div class="sign-in__btn_submit">
+                            <button type="submit" class="btn">Login</button>
+                        </div>
+
+                        <div class="sign-in__register-link">
+                            <p>Don't have an account? <a href="#">Register</a></p>
+                        </div>
+
+
+                    </form>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>
