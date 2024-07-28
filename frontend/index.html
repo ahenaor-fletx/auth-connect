@@ -3,12 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Login page for Auth Connect Project">
+    <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <title>Auth Connect Project</title>
 </head>
 <body class="sign-in-page">
+
+    <!-- Navbar -->
+    <nav class="sign-in__navbar">
+        <img src="./icons/icon_menu.svg" alt="menu" class="sign-in__menu">
+        <div class="sign-in__navbar-left">
+            <img src="./logos/logo_v1.svg" alt="logo" class="sign-in__logo">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./">About Me</a></li>
+                <li><a href="./">Projects</a></li>
+                <li><a href="./">APIs</a></li>
+                <li><a href="./">Blog</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sign-in__navbar-right">
+            <ul>
+                <li class="sign-in__navbar-email">ahenaor@unal.edu.co</li>
+                <!-- <li class="sign-in__navbar-bxs-user-account">
+                    <i class='bx bxs-user-account'></i>
+                </li> -->
+            </ul>
+        </div>
+
+        <div class="sign-in__desktop-menu inactive">
+            <ul>
+              <li>
+                <a href="/" class="title">My account</a> <!--Información general de la cuenta y perfil del usuario. -->
+              </li>
+        
+              <li>
+                <a href="/">Settings</a> <!--Configuraciones de la cuenta, preferencias de API, etc. -->
+              </li>
+
+              <li>
+                <a href="/">Notifications</a> <!--Centro de notificaciones para alertas importantes sobre el servicio. -->
+              </li>
+
+              <li>
+                <a href="/">Billing</a> <!--Acceso rápido a la información de facturación y planes. -->
+              </li>
+
+              <li>
+                <a href="/">Help & Support</a> <!--Enlace directo a recursos de ayuda o contacto con soporte. -->
+              </li>
+        
+              <li>
+                <a href="/">Sign out</a> <!--Opción para cerrar sesión. -->
+              </li>
+            </ul>
+        </div>
+
+    </nav>
+
     <!-- Contenido principal de la página -->
     <main class="sign-in" id="main-content" role="main">
         <!-- Contenedor del formulario -->
@@ -22,17 +76,17 @@
                         <h1>Login</h1>
                         <!-- Grupo de campos de entrada -->
                          <div class="sign-in__input-box">
-                            <input type="text", placeholder="Username" required>
+                            <input type="text" placeholder="Username" required>
                             <i class='bx bxs-user'></i>
                          </div>
 
                          <div class="sign-in__input-box">
-                            <input type="password", placeholder="Password" required>
+                            <input type="password" id="password" placeholder="Password" required autocomplete="off">
                             <i class='bx bxs-lock-alt' ></i>
                          </div>
 
                          <div class="sign-in__remember-forgot">
-                            <label><input type="checkbox"> Remenber me</label>
+                            <label><input type="checkbox"> Remember me</label>
                             <a href="#">Forgot Password?</a>
                         </div>
 
@@ -43,17 +97,12 @@
                         <div class="sign-in__register-link">
                             <p>Don't have an account? <a href="#">Register</a></p>
                         </div>
-
-
                     </form>
-
                 </article>
-
-
             </div>
-
         </div>
-
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
