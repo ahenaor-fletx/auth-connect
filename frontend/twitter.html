@@ -6,7 +6,7 @@
     <meta name="description" content="Login page for Auth Connect Project">
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Auth Connect Project</title>
+    <title>Auth Connect Project - Twitter</title>
 </head>
 <body class="sign-in-page">
 
@@ -44,8 +44,8 @@
             <ul>
                 <li><a href="./">Home</a></li>
                 <li><a href="./">About Me</a></li>
-                <li><a href="./twitter.html">Projects</a></li>
-                <li><a href="./">APIs</a></li>
+                <li><a href="./">Projects</a></li>
+                <li><a href="./twitter.html">APIs</a></li>
                 <li><a href="./">Blog</a></li>
                 <li><a href="./">Contact</a></li>
             </ul>
@@ -67,43 +67,34 @@
     </nav>
 
     <!-- Contenido principal de la página -->
-    <main class="sign-in" id="main-content" role="main">
-        <!-- Contenedor del formulario -->
-        <div class="sign-in__container">
-             <!-- Contenedor envolvente -->
-             <div class="sign-in__wrapper">
-                <!-- Artículo que contiene el formulario de inicio de sesión -->
-                <article class="sign-in__form">
-                    <!-- Formulario de inicio de sesión -->
-                    <form action="#">
-                        <h1>Login</h1>
-                        <!-- Grupo de campos de entrada -->
-                         <div class="sign-in__input-box">
-                            <input type="text" placeholder="Username" required>
-                            <i class='bx bxs-user'></i>
-                         </div>
+    <main class="twitter" id="main-content" role="main">
+        
 
-                         <div class="sign-in__input-box">
-                            <input type="password" id="password" placeholder="Password" required autocomplete="off">
-                            <i class='bx bxs-lock-alt' ></i>
-                         </div>
-
-                         <div class="sign-in__remember-forgot">
-                            <label><input type="checkbox"> Remember me</label>
-                            <a href="#">Forgot Password?</a>
-                        </div>
-
-                        <div class="sign-in__btn_submit">
-                            <button type="submit" class="btn">Login</button>
-                        </div>
-
-                        <div class="sign-in__register-link">
-                            <p>Don't have an account? <a href="#">Register</a></p>
-                        </div>
-                    </form>
-                </article>
+        <!-- Detalle de las cuentas -->
+         <aside class="twitter__account-detail inactive">
+            <div class="twitter__account-detail-close">
+              <!-- <img src="./icons/icon_close.png" alt="close"> -->
+              <i class='bx bx-x-circle'></i>
             </div>
-        </div>
+            <img src="https://pbs.twimg.com/profile_images/1772786938245685248/BRgPp8cJ_400x400.jpg" alt="bike">
+            <div class="twitter__account-info">
+              <p>Fico Gutierrez</p>
+              <p>1.431</p>
+              <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
+              <button class="twitter__primary-button">
+                View details
+              </button>
+            </div>
+          </aside>
+
+        <!-- Contenedor del formulario -->
+        <section class="twitter__container" > <!-- main-container -->
+            <div class="twitter__cards-container"> <!--cards-container -->
+            </div>
+         </section>
+
+
+
     </main>
 
     <script src="main.js"></script>
